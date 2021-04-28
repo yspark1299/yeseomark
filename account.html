@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="shop.css"/>
+
+        <script>
+            function stickyMenu(){
+                var sticky=document.getElementById('sticky');
+                if(window.pageYOffset > 220) {
+                    sticky.classList.add('sticky');
+                }
+                else{
+                    sticky.classList.remove('sticky');
+                }
+            }
+            window.onscroll = function(){
+                stickyMenu();
+            }
+        </script>
+        
+    </head>
+    
+    <body>
+        <div class="parallax">
+            <div class="page-title">Yeseo's Mart</div>
+        </div>
+        <div class="menu" id="sticky">
+            <ul class="menu-ul">
+                <a href="index.html " class="a-menu"><li>Products</li></a>
+                <a href="#contact" class="a-menu"><li>Contact</li></a>
+                <a href="cart.html" class="a-menu"><li>Cart &#128722;</li></a>
+                <a href="account.html" class="a-menu"><li>Login</li></a>
+            </ul>
+            <div class="search-box">
+                <form>
+                    <input type="text" placeholder="Search items" name="search" class="search-input"/>
+                    <button type="submit">&#128270</button>
+                </form>
+            </div>
+        </div>
+
+
+        <!--Account page-->
+        <div class="account-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="images/welcome.jpg" width="100%">
+                    </div>
+                    <div class="col-2">
+                        <div class="form-container">
+                            <div class="form-btn">
+                                <span onclick="login()" >Login</span>
+                                <span onclick="register()">Register</span>
+                                <hr id="Indicator">
+                            </div>
+                            <form id="LoginForm">
+                                <input type="text" placeholder="Username">
+                                <input type="password" placeholder="Password">
+                                <button type="submit" class="account-btn">Login</button>
+                            </form>
+                            <form id="RegForm">
+                                <input type="text" placeholder="Username">
+                                <input type="email" placeholder="Email">
+                                <input type="password" placeholder="Password">
+                                <button type="submit" class="account-btn">Register</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--Contact info start-->
+        <div class="parallax1">
+            <div class="footer" id="contact">
+                <div class="quick-links">
+                    <div>Location</div>
+                    <ul>
+                        <li>ABC St. Hi City, USA<br/></li>
+                        <li>&#9742;:123-4567-890<br/></li>
+                        <li><a href="mailto:yeseomart@abc123.com" class="a-links">&#128231;yeseomart@abc123.com</li></a></li>
+                    </ul>
+                </div>
+                <div class="quick-links">
+                    <div>Open Hour</div>
+                    <ul>
+                        <li>Mon-Fri 9:00am-9:00pm</li>
+                        <li>Weekends: 9:00am-11:00pm</li>
+                        <li>Holiday: 9:00am-1:00pm</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!--Contact info end-->
+        <script>
+            var LoginForm = document.getElementById("LoginForm");
+            var RegForm = document.getElementById("RegForm");
+            var Indicator = document.getElementById("Indicator");
+                function register(){
+                    RegForm.style.transform = "translateX(0px)";
+                    LoginForm.style.transform = "translateX(0px)";
+                    Indicator.style.transform = "translateX(65px)";
+                }
+                function login(){
+                    RegForm.style.transform = "translateX(300px)";
+                    LoginForm.style.transform = "translateX(300px)";
+                    Indicator.style.transform = "translateX(-60px)";
+                }
+            </script>
+    </body>
+</html> 

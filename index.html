@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="shop.css"/>
+
+        <script>
+            function stickyMenu(){
+                var sticky=document.getElementById('sticky');
+                if(window.pageYOffset > 220) {
+                    sticky.classList.add('sticky');
+                }
+                else{
+                    sticky.classList.remove('sticky');
+                }
+            }
+            window.onscroll = function(){
+                stickyMenu();
+            }
+        </script>
+    </head>
+    
+    <body>
+        <div class="parallax">
+            <div class="page-title">Yeseo's Mart</div>
+        </div>
+        <div class="menu" id="sticky">
+            <ul class="menu-ul">
+                <a href="#vegetables" class="a-menu"><li>Vegetables</li></a>
+                <a href="#snack" class="a-menu"><li>Snack</li></a>
+                <a href="#frozen" class="a-menu"><li>Frozen</li></a>
+                <a href="#meat" class="a-menu"><li>Meat</li></a>
+                <a href="#contact" class="a-menu"><li>Contact</li></a>
+                <a href="cart.html" class="a-menu"><li>Cart &#128722;</li></a>
+                <a href="account.html" class="a-menu"><li>Login</li></a>
+            </ul>
+            <div class="search-box">
+                <form>
+                    <input type="text" placeholder="Search items" name="search" class="search-input"/>
+                    <button type="submit">&#128270</button>
+                </form>
+            </div>
+        </div>
+        <div class="movingelement">
+            <div class="greeting">
+                Order before 12:00pm for same day delivery &#128666;
+            </div>
+        </div>
+        <!--Start Items part-->
+        <div class="container">
+            <a href="#vegetables">
+                <div class="categories">
+                    <img src="images/vegi/v1.jpeg" class="item-image"/>
+                    <div class="image-title">Vegetables</div>
+                </div>
+            </a>
+            <a href="#snack">
+                <div class="categories">
+                    <img src="images/snack/s1.jpeg" class="item-image"/>
+                    <div class="image-title">Snack</div>
+                </div>
+            </a>
+            <a href="#frozen">
+                <div class="categories">
+                    <img src="images/Frozen/f1.jpeg" class="item-image"/>
+                    <div class="image-title">Frozen</div>
+                </div>
+            </a>
+            <a href="#meat">
+                <div class="categories">
+                    <img src="images/Meat/m1.jpeg" class="item-image"/>
+                    <div class="image-title">Meat</div>
+                </div>
+            </a>
+        </div>
+        <!--Promotion-->
+        <div class="promotion-container" id="promotion">
+            <div class="parallax">
+                <div class="title">PROMOTION</div>
+            </div>
+            <div class="promotion">
+                Get 10$ save on the first purchase<br/>
+                <button class="coupon-btn">Download Coupon</button>
+            </div>
+            <div class="promotion">
+                Free delivery when purchase over 50$<br/>
+                <button class="coupon-btn">Download Coupon</button>
+            </div>
+            <div class="promotion">
+                Get 10% off min purchase 70$ <br/>
+                <button class="coupon-btn">Download Coupon</button>
+            </div>
+        </div>
+        <!--Promotion end-->
+
+        <!--Veg bein-->
+        <div class="promotion-container" id="vegetables">
+            <div class="parallax">
+                <div class="title">VEGETABLES</div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="images/vegi/v1.jpeg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>White mushroom</b><br/>
+                    <div class="item-select">
+                        Price: 0.99$/pack
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                    <button class="addcart-btn">Add Cart</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="images/vegi/v2.jpeg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Chives</b><br/>
+                    <div class="item-select">
+                        Price: 2.99$/300g
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                    <button class="addcart-btn">Add Cart</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="images/vegi/v3.jpeg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Bean Sprout</b><br/>
+                    <div class="item-select">
+                        Price: 1.50$/500g
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                    <button class="addcart-btn">Add Cart</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="images/vegi/v4.jpeg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Garlic steam</b><br/>
+                    <div class="item-select">
+                        Price: 1.99$/pack
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                    <button class="addcart-btn">Add Cart</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="images/vegi/v5.jpeg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Spinich</b><br/>
+                    <div class="item-select">
+                        Price: 3.99$/500g
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                    <button class="addcart-btn">Add Cart</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="images/vegi/v6.jpeg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>green pepper</b><br/>
+                    <div class="item-select">
+                        Price: 1.99$/10pices
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                    <button class="addcart-btn">Add Cart</button>
+                </div>
+            </div>
+        </div>
+        <!--Veg end-->
+
+        <!--Snack begin-->
+        <div class="promotion-container" id="snack">
+            <div class="parallax">
+                <div class="title">SNACK</div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="images/snack/s1.jpeg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Grape Candy</b><br/>
+                    <div class="item-select">
+                        Price: 2.99$/pack
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                    <button class="addcart-btn">Add Cart</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="images/snack/s2.jpeg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Choco cracker</b><br/>
+                    <div class="item-select">
+                        Price: 2.50$/pack
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                    <button class="addcart-btn">Add Cart</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="images/snack/s3.jpeg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Caramel</b><br/>
+                    <div class="item-select">
+                        Price: 0.99$/pack
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                    <button class="addcart-btn">Add Cart</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="images/snack/s4.jpeg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Red bean bar</b><br/>
+                    <div class="item-select">
+                        Price: 0.99$/pack
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                    <button class="addcart-btn">Add Cart</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="images/snack/s5.jpeg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Apple pie</b><br/>
+                    <div class="item-select">
+                        Price: 3.99$/pack
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                    <button class="addcart-btn">Add Cart</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="images/snack/s6.jpeg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Potato cracker</b><br/>
+                    <div class="item-select">
+                        Price: 1.50$/pack
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                    <button class="addcart-btn">Add Cart</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="images/snack/s7.jpeg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Chewing gum</b><br/>
+                    <div class="item-select">
+                        Price: 2.50$/pack
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                    <button class="addcart-btn">Add Cart</button>
+                </div>
+            </div>
+        </div>
+        <!--Snack end-->
+
+        <!--Frozeon begin-->
+        <div class="promotion-container" id="frozen">
+            <div class="parallax">
+                <div class="title">FROZEN</div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="images/Frozen/f1.jpeg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Dumpling</b><br/>
+                    <div class="item-select">
+                        Price: 6.99$/pack
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                    <button class="addcart-btn">Add Cart</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="images/Frozen/f2.jpeg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Fish cake</b><br/>
+                    <div class="item-select">
+                        Price: 2.50$/pack
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                    <button class="addcart-btn">Add Cart</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="images/Frozen/f3.jpeg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>BBQ</b><br/>
+                    <div class="item-select">
+                        Price: 6.99$/pack
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                    <button class="addcart-btn">Add Cart</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="images/Frozen/f4.jpeg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Corn Dog</b><br/>
+                    <div class="item-select">
+                        Price: 4.99$/pack
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                    <button class="addcart-btn">Add Cart</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="images/Frozen/f5.jpeg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Rice cake</b><br/>
+                    <div class="item-select">
+                        Price: 4.99$/pack
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                    <button class="addcart-btn">Add Cart</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="images/Frozen/f6.jpeg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Seafood Pancake</b><br/>
+                    <div class="item-select">
+                        Price: 6.99$/pack
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                    <button class="addcart-btn">Add Cart</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="images/Frozen/f7.jpeg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Kimchi Dumpling</b><br/>
+                    <div class="item-select">
+                        Price: 6.99$/pack
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                    <button class="addcart-btn">Add Cart</button>
+                </div>
+            </div>
+        </div>
+        <!--frozen end-->
+
+        <!--meat start-->
+        <div class="promotion-container" id="meat">
+            <div class="parallax">
+                <div class="title">MEAT</div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="images/Meat/m1.jpeg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Bulgogi(beef)</b><br/>
+                    <div class="item-select">
+                        Price: 12.99$/1kg
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                    <button class="addcart-btn">Add Cart</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="images/Meat/m2.png" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Sliced beef</b><br/>
+                    <div class="item-select">
+                        Price: 2.99$/100g
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>100g</option>
+                        <option>200g</option>
+                        <option>300g</option>
+                        <option>500g</option>
+                        <option>1kg</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                    <button class="addcart-btn">Add Cart</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="images/Meat/m3.jpeg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Beef ribs</b><br/>
+                    <div class="item-select">
+                        Price: 29.99$/1kg
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1kg</option>
+                        <option>2kg</option>
+                        <option>3kg</option>
+                        <option>4kg</option>
+                        <option>5kg</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                    <button class="addcart-btn">Add Cart</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="images/Meat/m4.jpeg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Sliced port</b><br/>
+                    <div class="item-select">
+                        Price: 1.99$/100g
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>100g</option>
+                        <option>200g</option>
+                        <option>500g</option>
+                        <option>1kg</option>
+                        <option>2kg</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                    <button class="addcart-btn">Add Cart</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="images/Meat/m5.png" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Ox born</b><br/>
+                    <div class="item-select">
+                        Price: 19.99$/2kg
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>2kg</option>
+                        <option>4kg</option>
+                        <option>6kg</option>
+                        <option>8kg</option>
+                        <option>10kg</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                    <button class="addcart-btn">Add Cart</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="images/Meat/m6.jpeg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Duck</b><br/>
+                    <div class="item-select">
+                        Price: 15.99$/500g
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                    <button class="addcart-btn">Add Cart</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="images/Meat/m7.jpeg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Bulgogi sauce</b><br/>
+                    <div class="item-select">
+                        Price: 3.99$/bottle
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                    <button class="addcart-btn">Add Cart</button>
+                </div>
+            </div>
+        </div>
+        <!--meat end-->
+        <!--Finish Items part-->
+
+
+        <!--Contact info start-->
+        <div class="parallax1">
+            <div class="footer" id="contact">
+                <div class="quick-links">
+                    <div>Location</div>
+                    <ul>
+                        <li>ABC St. Hi City, USA<br/></li>
+                        <li>&#9742;:123-4567-890<br/></li>
+                        <li><a href="mailto:yeseomart@abc123.com" class="a-links"> &#128231;yeseomart@abc123.com</li></a></li>
+                    </ul>
+                </div>
+                <div class="quick-links">
+                    <div>Open Hour</div>
+                    <ul>
+                        <li>Mon-Fri 9:00am-9:00pm</li>
+                        <li>Weekends: 9:00am-11:00pm</li>
+                        <li>Holiday: 9:00am-1:00pm</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--Contact info end-->
+
+    </body>
+</html> 
